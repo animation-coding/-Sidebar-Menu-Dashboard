@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    
+    
+ <title>Document</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+body {
+    background: #f3f4f8;
+    color: #374049;
+
+}
+
+.wrapper {
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #fff;
+    box-shadow:1px 1px 10px rgba(0, 0, 0, 0.06);
+}
+.wrapper .navbar {
+    position: relative;
+}
+
+.title-1
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 16px;
+    color:#374049;
+    font-family: 'Share Tech Mono', monospace;
+
+}
+
+
+.wrapper .navbar .profile_wrap {
+    padding: 25px;
+    text-align: center;
+}
+.wrapper .navbar .profile_wrap .profile_img {
+    width: 70px;
+    margin: 0 auto 10px;
+    display: block;
+}
+.wrapper .navbar .profile_wrap .profile_img img {
+    width: 100%;
+}
+.wrapper .navbar .profile_wrap .profile_info .name {
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: 800;
+    color: #374049;
+}
+.wrapper .navbar .profile_wrap .profile_info .role {
+    font-weight: 600;
+    font-size: 15px;
+    color: #90959b;
+}
+
+.wrapper .navbar ul 
+{
+    padding: 10px 40px;
+}
+.wrapper .navbar ul li > a {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    padding: 15px;
+    height: 50px;
+    color: #9ca0a5;
+    font-weight: 600;
+    transition: all 2s ease;
+  
+}
+.wrapper .navbar ul li a span.icon {
+    margin-right: 10px;
+}
+
+.wrapper .navbar ul li a > span {
+    display: inline-block;
+}
+
+
+
+
+a.active .icon,
+a:hover .icon
+{
+    color: #ffad41;
+}
+a.active .title,
+a:hover .title
+{
+    color: #374049;
+    font-weight: 800;
+}
+
+
+
+.navbar ul li:nth-child(1) > a:hover .icon
+{
+    color:#01ec3f;
+}
+.navbar ul li:nth-child(3) > a:hover .icon
+{
+    color: royalblue;
+}
+.navbar ul li:nth-child(4) > a:hover .icon
+{
+    color: #ff375c;
+}
+.navbar ul li:nth-child(5) > a:hover .icon
+{
+    color: #41ffed;
+}
+.navbar ul li:nth-child(6) > a:hover .icon
+{
+    color: #ff5100;
+}
+.navbar ul li:nth-child(7) > a:hover .icon
+{
+    color: #e65aff;
+}
+.navbar ul li:nth-child(8) > a:hover .icon
+{
+    color: #ff4141;
+}
+
+
+</style>
+
+</head>
+<body>
+    
+
+<div class="wrapper">
+
+    <div class="navbar">
+            <h1 class="title-1">Animation</h1>
+            <div class="profile_wrap">
+                <div class="profile_img">
+                   <img src="Avatar.svg" alt="">
+                </div>
+                <div class="profile_info">
+                 <h2 class="name">Garreth Riley</h2>
+                 <p class="role">Administrator</p>
+                </div>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-tachometer-alt"></i></span>
+                    <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                    <span class="icon"><i class="fa fa-star"></i></span>
+                    <span class="title">Sales</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="far fa-file-alt"></i></span>
+                    <span class="title">Involces</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="far fa-credit-card"></i></span>
+                    <span class="title">Payments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-users"></i></span>
+                    <span class="title">Team</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-database"></i></span>
+                    <span class="title">Database</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-link"></i></span>
+                    <span class="title">Partners</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                    <span class="icon"><i class="fa fa-cog"></i></span>
+                    <span class="title">Setting</span>
+                    </a>
+                </li>
+
+            </ul>
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
